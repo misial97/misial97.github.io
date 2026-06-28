@@ -21,7 +21,7 @@ export function getDictionary(locale: Locale) {
         description:
           'Computer engineer specializing in backend development, software architecture and technical leadership. I currently lead development teams at CaixaBank Tech and bring experience in banking, Big Data and high-demand cloud platforms.',
         currentLabel: 'Currently',
-        currentTitle: 'Squad Lead at CaixaBank Tech',
+        currentTitle: 'Working at CaixaBank Tech',
         availability: 'Open to new challenges',
         location: 'Aranjuez, Madrid',
         focus: 'Backend & Cloud specialization',
@@ -101,7 +101,7 @@ export function getDictionary(locale: Locale) {
       description:
         'Ingeniero Informático especializado en desarrollo backend, arquitectura de software y liderazgo técnico. Actualmente lidero equipos de desarrollo en CaixaBank Tech y cuento con experiencia en banca, Big Data y plataformas cloud de alta exigencia.',
       currentLabel: 'Actualmente',
-      currentTitle: 'Squad Lead en CaixaBank Tech',
+      currentTitle: 'Trabajando en CaixaBank Tech',
       availability: 'Disponible para retos',
       location: 'Aranjuez, Madrid',
       focus: 'Especialización Backend & Cloud',

@@ -213,11 +213,11 @@ export function PortfolioPage({ locale }: PortfolioPageProps) {
                   <Github className="h-4 w-4" /> GitHub
                 </Link>
               </Button>
-              <Button asChild variant="outline" size="lg" className="rounded-full border-white/15 bg-white/5 px-6 text-slate-100 hover:bg-white/10">
+              {/* <Button asChild variant="outline" size="lg" className="rounded-full border-white/15 bg-white/5 px-6 text-slate-100 hover:bg-white/10">
                 <Link href="/assets/CV.pdf" className="inline-flex items-center gap-2">
                   <Download className="h-4 w-4" /> {locale === 'en' ? 'Download CV' : 'Descargar CV'}
                 </Link>
-              </Button>
+              </Button> */}
             </div>
           </div>
 
