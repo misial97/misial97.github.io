@@ -213,11 +213,11 @@ export function PortfolioPage({ locale }: PortfolioPageProps) {
                   <Github className="h-4 w-4" /> GitHub
                 </Link>
               </Button>
-              {/* <Button asChild variant="outline" size="lg" className="rounded-full border-white/15 bg-white/5 px-6 text-slate-100 hover:bg-white/10">
-                <Link href="/assets/CV.pdf" className="inline-flex items-center gap-2">
+              <Button asChild variant="outline" size="lg" className="rounded-full border-white/15 bg-white/5 px-6 text-slate-100 hover:bg-white/10">
+                <Link href="/CV.pdf" className="inline-flex items-center gap-2" target="_blank" rel="noreferrer">
                   <Download className="h-4 w-4" /> {locale === 'en' ? 'Download CV' : 'Descargar CV'}
                 </Link>
-              </Button> */}
+              </Button>
             </div>
           </div>
 
@@ -265,9 +265,9 @@ export function PortfolioPage({ locale }: PortfolioPageProps) {
         </motion.div>
       </section>
 
-      <section id="about" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
+      <section id="about" className="mx-auto max-w-7xl px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24">
         <SectionHeading eyebrow={t.about.eyebrow} title={t.about.title} />
-        <div className="grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
+        <div className="mt-2 grid gap-10 lg:grid-cols-[0.95fr_1.05fr] lg:items-start">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
             <p className="text-lg leading-8 text-slate-300">{t.about.intro1}</p>
             <p className="mt-4 text-lg leading-8 text-slate-300">{t.about.intro2}</p>
@@ -286,7 +286,7 @@ export function PortfolioPage({ locale }: PortfolioPageProps) {
         </div>
       </section>
 
-      <section id="experience" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
+      <section id="experience" className="mx-auto max-w-7xl px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24">
         <SectionHeading eyebrow={t.experience.eyebrow} title={t.experience.title} />
         <div className="relative mt-10 space-y-8 before:absolute before:left-[15px] before:top-0 before:h-full before:w-px before:bg-gradient-to-b before:from-sky-400/50 before:via-slate-700 before:to-transparent">
           {experience.map((item) => (
@@ -295,7 +295,7 @@ export function PortfolioPage({ locale }: PortfolioPageProps) {
         </div>
       </section>
 
-      <section id="tech" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
+      <section id="tech" className="mx-auto max-w-7xl px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24">
         <SectionHeading eyebrow={t.tech.eyebrow} title={t.tech.title} />
         <div className="mt-10 grid gap-6 md:grid-cols-2 xl:grid-cols-4">
           <TechCard title={t.tech.backendTitle} items={backendTech} />
@@ -305,9 +305,9 @@ export function PortfolioPage({ locale }: PortfolioPageProps) {
         </div>
       </section>
 
-      <section id="education" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
+      <section id="education" className="mx-auto max-w-7xl px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24">
         <SectionHeading eyebrow={t.education.eyebrow} title={t.education.title} />
-        <div className="mt-10 grid gap-6 lg:grid-cols-2">
+        <div className="mt-10 grid gap-6 lg:grid-cols-2 xl:grid-cols-3">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
             <div className="flex items-center gap-3 text-sky-300">
               <BriefcaseBusiness className="h-5 w-5" />
@@ -324,12 +324,21 @@ export function PortfolioPage({ locale }: PortfolioPageProps) {
             </div>
             <h3 className="mt-4 text-2xl font-semibold text-white">{t.education.trainingName}</h3>
             <p className="mt-2 text-slate-300">{t.education.trainingDescription}</p>
-            <p className="mt-2 text-sm text-slate-400">2026</p>
+            <p className="mt-2 text-sm text-slate-400">{t.education.trainingDate}</p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
+            <div className="flex items-center gap-3 text-sky-300">
+              <Sparkles className="h-5 w-5" />
+              <p className="text-sm uppercase tracking-[0.3em]">{t.education.masterLabel}</p>
+            </div>
+            <h3 className="mt-4 text-2xl font-semibold text-white">{t.education.masterName}</h3>
+            <p className="mt-2 text-slate-300">{t.education.masterDescription}</p>
+            <p className="mt-2 text-sm text-slate-400">{t.education.masterDate}</p>
           </div>
         </div>
       </section>
 
-      <section id="certs" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
+      <section id="certs" className="mx-auto max-w-7xl px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24">
         <SectionHeading eyebrow={t.certs.eyebrow} title={t.certs.title} />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           <div className="rounded-3xl border border-white/10 bg-white/5 p-8 backdrop-blur">
@@ -343,7 +352,7 @@ export function PortfolioPage({ locale }: PortfolioPageProps) {
         </div>
       </section>
 
-      <section id="projects" className="mx-auto max-w-7xl px-6 py-20 sm:px-10 lg:px-16">
+      <section id="projects" className="mx-auto max-w-7xl px-6 py-16 sm:px-10 sm:py-20 lg:px-16 lg:py-24">
         <SectionHeading eyebrow={t.projects.eyebrow} title={t.projects.title} />
         <div className="mt-10 rounded-3xl border border-white/10 bg-white/5 p-10 text-center backdrop-blur">
           <p className="text-xl text-slate-300">{t.projects.description}</p>

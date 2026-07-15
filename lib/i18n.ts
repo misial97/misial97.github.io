@@ -25,7 +25,7 @@ export function getDictionary(locale: Locale) {
         availability: 'Open to new challenges',
         location: 'Aranjuez, Madrid',
         focus: 'Backend & Cloud specialization',
-        learning: 'Exploring AI applied to development',
+        learning: 'Studying the Master in AI Development at Big School',
         english: 'Professional English B2',
       },
       about: {
@@ -63,6 +63,11 @@ export function getDictionary(locale: Locale) {
         trainingLabel: 'Training',
         trainingName: 'BIG School',
         trainingDescription: 'Introduction to AI Development: Agent-Based Program',
+        trainingDate: 'June 2025',
+        masterLabel: 'Master',
+        masterName: 'Master in AI Development at Big School',
+        masterDescription: 'Currently in progress and focused on applied AI, agents and intelligent software development.',
+        masterDate: '2026 - Present',
       },
       certs: {
         eyebrow: 'Certifications',
@@ -105,7 +110,7 @@ export function getDictionary(locale: Locale) {
       availability: 'Disponible para retos',
       location: 'Aranjuez, Madrid',
       focus: 'Especialización Backend & Cloud',
-      learning: 'Aprendiendo IA aplicada al desarrollo',
+      learning: 'Cursando el Máster de Desarrollo con IA en Big School',
       english: 'Inglés profesional B2',
     },
     about: {
@@ -143,6 +148,11 @@ export function getDictionary(locale: Locale) {
       trainingLabel: 'Formación',
       trainingName: 'BIG School',
       trainingDescription: 'Iniciación al Desarrollo con IA: Programa con Agentes',
+      trainingDate: 'Junio 2025',
+      masterLabel: 'Máster',
+      masterName: 'Máster en Desarrollo con IA en Big School',
+      masterDescription: 'En curso y enfocado en IA aplicada, agentes y desarrollo de software inteligente.',
+      masterDate: '2026 - Actualidad',
     },
     certs: {
       eyebrow: 'Certificaciones',
